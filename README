@@ -1,0 +1,23 @@
+﻿HyperJAMA
+
+Α λ ε ξ
+
+HyperJAMA is an open source high performance linear algebra extension to NIST's Template Numerical Toolkit.
+The same interface is used, but many of the functions have been optimized using parallelization,
+vectorization, and cache alignment to perform near the theoretical computational limits of modern processors.
+BLAS functions are optimized using SSE and SSE2 operations.
+
+Features
+	Speed increases up to 128x
+	Block parallel algorithms using OpenMP
+	Better cache alignment
+	Vectorized BLAS Level 1 Functions using SSE and SSE2 intrinsic functions
+	Support for complex matrix types, such as TNT::Array2D<std::complex<double> >
+
+Instructions
+	1. Go to http://math.nist.gov/tnt/download.html and download the latest source code of the
+	   Template Numerical Toolkit and JAMA/C++ Linear Algebra Package.
+	2. Click here to download the HyperJAMA replacement headers.
+	3. Replace the corresponding headers from your project with the HyperJAMA headers.
+	4. Add OpenMP and SSE2 flags to compiler command line arguments. Instructions for g++ and
+	   Visual Studio are printed to the console while compiling.
